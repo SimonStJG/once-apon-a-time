@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jbApp')
+angular.module('app')
   .controller('MainCtrl', ['$scope', 'StoryService', '$routeParams', function ($scope, StoryService, $routeParams) {
 
   	var id = $routeParams.id || 'start';

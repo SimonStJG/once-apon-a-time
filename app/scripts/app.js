@@ -1,9 +1,7 @@
 'use strict';
 
 angular
-  .module('jbApp', [
-    'ngRoute'
-  ])
+  .module('app', ['ngRoute'])
   .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
     $locationProvider.hashPrefix('');
     $routeProvider

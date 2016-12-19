@@ -1,6 +1,6 @@
 'use strict';
 
-angular.module('jbApp').service('StoryService', function() {
+angular.module('app').service('StoryService', function() {
     return {
         start: {
             story: [
