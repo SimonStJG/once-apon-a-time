@@ -13,10 +13,10 @@ angular.module('jbApp')
   		$scope.data = StoryService[id];
 	}
 
-	angular.forEach(StoryService, function(value, key){
-		angular.forEach(value.routes, function(route, key){
+	angular.forEach(StoryService, function(value){
+		angular.forEach(value.routes, function(route){
 			if(!StoryService.hasOwnProperty(route.to)){
-				console.log("Can't find " + route.to);
+				console.log('Can\'t find ' + route.to);
 			}
 		});
 	});
