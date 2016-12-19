@@ -7,7 +7,7 @@ angular.module('jbApp')
 
   	if (!StoryService.hasOwnProperty(id)){
   		$scope.data = {};
-  		$scope.data.story = ['Simon and Helen made a mistake!  :('];
+  		$scope.data.story = ['Mistakes have been made!  :('];
   		$scope.data.routes = null;
   	} else {
   		$scope.data = StoryService[id];
