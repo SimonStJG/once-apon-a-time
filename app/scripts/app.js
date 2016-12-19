@@ -1,18 +1,11 @@
 'use strict';
 
-/**
- * @ngdoc overview
- * @name jbApp
- * @description
- * # jbApp
- *
- * Main module of the application.
- */
 angular
   .module('jbApp', [
     'ngRoute'
   ])
-  .config(['$routeProvider', function ($routeProvider) {
+  .config(['$routeProvider', '$locationProvider', function ($routeProvider, $locationProvider) {
+    $locationProvider.hashPrefix('');
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
